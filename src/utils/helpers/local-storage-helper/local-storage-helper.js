@@ -25,7 +25,7 @@ export default {
     localStorage.setItem(TODO_STORAGE_KEY, JSON.stringify(ids));
   },
   saveTodo(todo) {
-    const newId = uuidv4();
+    const newId = todo.title;
     todo.id = newId;
 
     const todoIds = this.getTodoIds();
