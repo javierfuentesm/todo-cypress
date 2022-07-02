@@ -31,7 +31,7 @@ export default {
     const todoIds = this.getTodoIds();
     todoIds.push(newId);
 
-    localStorage.setItem(todo.id, JSON.stringify(todo));
+    localStorage.setItem(todo.title, JSON.stringify(todo));
     this.saveTodoIds(todoIds);
   },
   updateTodo(id, todo) {
