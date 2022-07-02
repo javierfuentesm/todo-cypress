@@ -1,0 +1,35 @@
+body {
+  background: #00ced1;
+  color: #f5f5f5;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.todos {
+  margin-top: 10px;
+}
+
+.todo {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid purple;
+  border-radius: 10px;
+}
+
+.todo.complete {
+  opacity: 0.5;
+}
+
+.todo.complete .title,
+.todo.complete .description {
+  text-decoration: line-through;
+}
+
+.newTodoForm {
+  border: 1px solid #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
